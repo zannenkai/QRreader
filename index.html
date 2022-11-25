@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com; connect-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src * blob:; media-src *">
+    <title>QRreader</title>
+  </head>
+  <body>
+    <div><button>リロード</button> 画像をクリップボードにコピーしてリロード</div>
+    
+    <div class="errorMsg" style="margin-top:1em;"></div>
+    <p class="qrValue"><a target="_blank"></a></p>
+    <canvas></canvas>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
